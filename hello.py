@@ -1,5 +1,9 @@
-name = input("What's your name? ").strip().title()
+def main():
+  name = input("What's your name? ")
+  print(hello(name))
 
-first, second = name.split(" ")
+def hello(to="world"):
+  return f"hello, {to}"
 
-print(f"Hello, {first}")
+if __name__ == "__main__":
+  main()
